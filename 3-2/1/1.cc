@@ -2,8 +2,8 @@
 
 using namespace std;
 
-void makeRows( string* row, int x, int y = 0){
-    (*row)[x] = '*';
+void makeRows( string* prows, int x=0, int y = 0){
+    (prows)[y][x] = '*';
     return;
 }
 
@@ -27,7 +27,7 @@ int main(){
             break;
         }
         else{
-            makeRows(&rows[y], x, y);
+            makeRows(rows, x, y);
             printPaintBox(rows);
         }
     }
