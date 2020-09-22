@@ -23,7 +23,7 @@ int main(){
     int x, y;
     for(int i =0; i < 5; i++){
         cin >> x >> y;
-        if( x<0 || y <0){
+        if( x<0 || y <0 || x>=5 || y>=5){
             break;
         }
         else{
