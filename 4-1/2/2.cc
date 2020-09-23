@@ -21,4 +21,9 @@ int main(){
     }
     cout << "min: " << min << endl;
     cout << "max: " << max << endl;
+
+    delete[] array;
+
+    return 0;
+
 }
